@@ -1,4 +1,4 @@
-const covid19ImpactEstimator = (data) => {
+const covid19ImpactEstimator = ({data}) => {
     const input = data;
     return{
         data:input,
@@ -16,7 +16,7 @@ const covid19ImpactEstimator = (data) => {
         timeToElapse=value * 30;
     }
     //impart module
-    const impactCase = (input) => { 
+    const impactCase = ({input}) => { 
       
         return impact ={
 
@@ -34,7 +34,7 @@ const covid19ImpactEstimator = (data) => {
             infectionsByRequestedTime =infectionsByRequestedTime * avgDailyIncomeInUSD * avgDailyIncomePopulation * timeToElapse
         }
     }
-    const severeImpactCase = (input) => { 
+    const severeImpactCase = ({input}) => { 
        return impactSevere ={
             
         //challenge 1
