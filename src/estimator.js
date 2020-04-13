@@ -1,5 +1,5 @@
-const covid19ImpactEstimator = ({data}) => {
-    const input = data;
+const covid19ImpactEstimator = (data) => {
+    const {data} = input;
     return{
         data:input,
         impact:{},
@@ -16,7 +16,7 @@ const covid19ImpactEstimator = ({data}) => {
         timeToElapse=value * 30;
     }
     //impart module
-    const impactCase = ({input}) => { 
+
       
         return impact ={
 
@@ -33,8 +33,8 @@ const covid19ImpactEstimator = ({data}) => {
             casesForVentilatorsByRequestedTime = 0.02 * nfectionsByRequestedTime,
             infectionsByRequestedTime =infectionsByRequestedTime * avgDailyIncomeInUSD * avgDailyIncomePopulation * timeToElapse
         }
-    }
-    const severeImpactCase = ({input}) => { 
+
+   
        return impactSevere ={
             
         //challenge 1
@@ -50,7 +50,6 @@ const covid19ImpactEstimator = ({data}) => {
             casesForVentilatorsByRequestedTime = 0.02 * infectionsByRequestedTime,
             infectionsByRequestedTime =infectionsByRequestedTime * avgDailyIncomeInUSD * avgDailyIncomePopulation * timeToElapse
         }
-    }
+    
 }
-
 export default covid19ImpactEstimator;
